@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 struct result{
     int nums[2];
@@ -47,6 +48,7 @@ int main()
 
     int arr[len];
 
+    srand(time(nullptr));
     for (int i = 0; i < len; i++) {
         arr[i] = rand() % len + 1;
     }
